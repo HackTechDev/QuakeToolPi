@@ -1,0 +1,23 @@
+entities.o: entities.c light.h ../common/cmdlib.h ../common/mathlib.h \
+ ../common/bspfile.h entities.h threads.h ../common/qmalloc.h
+light.o: light.c light.h ../common/cmdlib.h ../common/mathlib.h \
+ ../common/bspfile.h entities.h threads.h ../common/version.h \
+ ../common/work.h
+ltface.o: ltface.c light.h ../common/cmdlib.h ../common/mathlib.h \
+ ../common/bspfile.h entities.h threads.h
+threads.o: threads.c ../common/cmdlib.h threads.h ../common/qmalloc.h
+trace.o: trace.c light.h ../common/cmdlib.h ../common/mathlib.h \
+ ../common/bspfile.h entities.h threads.h ../common/qmalloc.h
+bspfile.o: ../common/bspfile.c ../common/cmdlib.h ../common/mathlib.h \
+ ../common/bspfile.h ../common/qmalloc.h
+cmdlib.o: ../common/cmdlib.c ../common/cmdlib.h ../common/qmalloc.h
+mathlib.o: ../common/mathlib.c ../common/cmdlib.h ../common/mathlib.h
+polylib.o: ../common/polylib.c ../common/cmdlib.h ../common/mathlib.h \
+ ../common/polylib.h ../common/qmalloc.h
+qmalloc.o: ../common/qmalloc.c ../common/qmalloc.h ../common/cmdlib.h
+scriplib.o: ../common/scriplib.c ../common/cmdlib.h ../common/scriplib.h
+threads.o: ../common/threads.c ../common/qmalloc.h ../common/cmdlib.h \
+ ../common/threads.h
+wadlib.o: ../common/wadlib.c ../common/qmalloc.h ../common/cmdlib.h \
+ ../common/wadlib.h
+work.o: ../common/work.c ../common/work.h ../common/cmdlib.h
